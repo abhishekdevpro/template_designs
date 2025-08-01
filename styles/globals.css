@@ -1,0 +1,350 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-[sans-serif];
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2.5 h-2.5;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-200;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-black;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-purple-700;
+  }
+
+  textarea,
+  input:focus {
+    @apply focus:outline-none;
+  }
+
+  .ul-padding {
+    padding-inline-start: 0.9rem;
+  }
+
+  .ul-padding-none {
+    padding-inline-start: 0;
+  }
+}
+
+@layer components {
+  .pi {
+    @apply p-2 mb-2 text-black bg-white rounded text-[0.9rem];
+  }
+
+  .profileInput {
+    @apply pi file:border-0 file:bg-black file:text-white file:rounded-sm;
+  }
+
+  .flex-col-gap-2 {
+    @apply flex flex-col gap-2;
+  }
+
+  .flex-wrap-gap-2 {
+    @apply flex flex-wrap gap-2;
+  }
+
+  .other-input {
+    @apply p-2 mb-2 text-black bg-white rounded focus:placeholder-transparent;
+  }
+
+  .input-title {
+    @apply text-[1rem] text-white font-semibold;
+  }
+
+  .f-col {
+    @apply flex flex-col;
+  }
+
+  .grid-4 {
+    @apply grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-4;
+  }
+
+  /* .editable {
+    @apply hover:bg-gray-100 hover:cursor-text outline-none;
+  } */
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.profession {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contact {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.social-media {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.content {
+  font-size: 14px;
+}
+
+.sub-content {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* @media print {
+  .exclude-print {
+    display: none;
+  }
+
+  .rm-padding-print {
+    padding: 0;
+  }
+
+  @page {
+    size: A4;
+    margin: 10mm;
+  } */
+
+/* .preview {
+    overflow-y: visible !important;
+  } */
+
+/* .preview::after {
+    content: "Created using https://Resume.vercel.app/";
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.2;
+    font-size: small;
+    text-align: center;
+    z-index: -1;
+  }
+} */
+
+/* styles/globals.css or a dedicated CSS file */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(2.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(2.95);
+  }
+}
+
+.transition-fade-in {
+  animation: fadeIn 2.3s ease-in-out;
+}
+
+.transition-fade-out {
+  animation: fadeOut 3.3s ease-in-out;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  /* overflow-y: hidden; */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+/* } */
+
+/*  */
+
+.preview {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Prevent unwanted scrolling */
+  transform: scale(0.98); /* Keep it at 1 to avoid distortion */
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid; */
+}
+
+.a4-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  width: 794px;
+  /* height: 1123px;  */
+  /* margin: auto; */
+  /* transform: scale(0.98); */
+  /* border: 2px solid blue; */
+  display: flex; /* Helps maintain layout */
+  justify-content: center;
+  align-items: center;
+}
+
+/* @media (max-width: 768px) {
+  .preview {
+    width: 100%;
+    overflow-x: hidden !important; 
+    overflow-y: hidden !important;
+    transform: scale(0.5);
+    transform-origin: top center;
+    height: auto;
+  }
+  .a4-wrapper {
+    transform: scale(0.6); 
+    transform-origin: top center;
+    width: 100%; 
+
+    max-width: 100%;
+    height: 83%;
+  }
+} */
+@media (max-width: 768px) {
+  .preview {
+    width: 100%;
+    overflow: hidden !important; /* Prevent unwanted scrollbars */
+    transform: scale(0.8); /* Adjust scaling for better visibility */
+    transform-origin: top center;
+    height: auto;
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: center;
+  }
+
+  .a4-wrapper {
+    transform: scale(1); /* Adjust scale for better fit */
+    transform-origin: top center;
+    width: 100%;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .preview {
+    transform: scale(0.7);
+    width: 110%;
+    /* height: auto; */
+  }
+  .a4-wrapper {
+    position: absolute;
+    left: 0px;
+    top: 250px;
+    overflow-x: hidden;
+    /* min-height: 10vh; */
+    height: auto;
+  }
+}
+
+.preview-dashboard {
+  width: 200%;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  transform: scale(0.5);
+  transform-origin: top left;
+  height: auto;
+  /* border:2px solid red; */
+}
+.a4-wrapper-dashboard {
+  transform: scale(0.9);
+  transform-origin: top center;
+  width: 100%;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  height: 100%;
+  max-height: 100vh;
+  /* border:2px solid green; */
+}
+@media (max-width: 480px) {
+  .preview-dashboard {
+    transform: scale(0.5);
+  }
+  .a4-wrapper-dashboard {
+    transform: scale(0.9);
+  }
+}
+.ql-container {
+  height: 162px !important;
+}
+/* components/PageLoader.css */
+.page-loader {
+  width: 75px;
+  aspect-ratio: 1;
+  display: grid;
+}
+.page-loader:before,
+.page-loader:after {
+  content: "";
+  grid-area: 1/1;
+  width: 35px;
+  aspect-ratio: 1;
+  box-shadow: 0 0 0 3px #fff inset;
+  filter: drop-shadow(40px 40px 0 #fff);
+  animation: l8 2s infinite alternate;
+}
+.page-loader:after {
+  margin: 0 0 0 auto;
+  filter: drop-shadow(-40px 40px 0 #fff);
+  animation-delay: -1s;
+}
+@keyframes l8 {
+  0%,
+  10% {
+    border-radius: 0;
+  }
+  30%,
+  40% {
+    border-radius: 50% 0;
+  }
+  60%,
+  70% {
+    border-radius: 50%;
+  }
+  90%,
+  100% {
+    border-radius: 0 50%;
+  }
+}
