@@ -108,17 +108,6 @@ const Login = () => {
             People across the globe are joining us to upgrade their career with
             our Robust AI.
           </p>
-          <button
-            onClick={handleGoogleSignin}
-            type="button"
-            className="w-full flex items-center justify-center bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-md mt-4 shadow-sm hover:bg-gray-100 focus:outline-none"
-          >
-            <FcGoogle className="h-6 w-6 mr-2" />
-            Continue with Google
-          </button>
-          <div className="p-4 flex justify-center items-center">
-            <p> OR</p>
-          </div>
 
           <form onSubmit={handleLogin}>
             <div className="mb-4">
