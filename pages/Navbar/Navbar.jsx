@@ -36,7 +36,7 @@ const Navbar = () => {
       );
 
       localStorage.removeItem("token");
-      router.push("https://airesume.abroadium.com/login");
+      router.push("/login");
     } catch (error) {
       console.error(
         "Error during logout:",
@@ -44,7 +44,7 @@ const Navbar = () => {
       );
       // Still remove token and redirect even if logout API fails
       localStorage.removeItem("token");
-      router.push("https://airesume.abroadium.com/login");
+      router.push("/login");
     }
   };
 
