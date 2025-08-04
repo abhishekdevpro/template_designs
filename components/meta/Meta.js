@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 export default function Meta({ title, keywords, description }) {
-  const homepage = "https://airesume.abroadium.com/";
+  const homepage = "/dashboard";
   const logo = "/public/assets/logo2.png";
   const favicon = "/assets/favicon.png"; // Use absolute path
 

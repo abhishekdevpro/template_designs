@@ -154,7 +154,7 @@ const Navbar = () => {
               CoverLetter
             </Link>
             <Link
-              href="https://airesume.abroadium.com/job-list"
+              href="job-list"
               className="text-[18px] font-semibold text-black hover:text-primary"
             >
               Jobs

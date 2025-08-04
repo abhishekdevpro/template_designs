@@ -292,7 +292,7 @@ export default function JobsPage() {
           ></div>
         </div> */}
         {displayedJobs.length < jobs.length && (
-          <Link href={"https://airesume.abroadium.com/job-list"}>
+          <Link href={"job-list"}>
             <button
               // onClick={() => setPerPage({ start: 0, end: 0 })}
               className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"

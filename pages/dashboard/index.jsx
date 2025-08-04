@@ -98,7 +98,7 @@ export default function DashboardPage() {
   };
   const handleMyDashboard = () => {
     setTimeout(() => {
-      router.push("https://airesume.abroadium.com/dashboard");
+      router.push("dashboard");
     }, 2000);
   };
   return (
