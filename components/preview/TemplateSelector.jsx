@@ -28,6 +28,9 @@ import template24 from "./template/template24.png";
 import template25 from "./template/template25.png";
 import template26 from "./template/template26.png";
 import template27 from "./template/template27.png";
+import template28 from "./template/template28.png";
+import template29 from "./template/template29.png";
+import template30 from "./template/template30.png";
 const TemplateSelector = ({
   selectedTemplate,
   setSelectedTemplate,
@@ -67,7 +70,9 @@ const TemplateSelector = ({
     { key: "template25", imageUrl: template25, pdfType: 1 },
     { key: "template26", imageUrl: template26, pdfType: 3 },
     { key: "template27", imageUrl: template27, pdfType: 3 },
-    { key: "template28", imageUrl: template21, pdfType: 2 },
+    { key: "template28", imageUrl: template28, pdfType: 2 },
+    { key: "template29", imageUrl: template29, pdfType: 2 },
+    { key: "template30", imageUrl: template30, pdfType: 2 },
   ];
 
   useEffect(() => {
