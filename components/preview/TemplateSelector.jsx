@@ -31,6 +31,9 @@ import template27 from "./template/template27.png";
 import template28 from "./template/template28.png";
 import template29 from "./template/template29.png";
 import template30 from "./template/template30.png";
+import template31 from "./template/template31.png";
+import template32 from "./template/template32.png";
+
 const TemplateSelector = ({
   selectedTemplate,
   setSelectedTemplate,
@@ -73,6 +76,8 @@ const TemplateSelector = ({
     { key: "template28", imageUrl: template28, pdfType: 2 },
     { key: "template29", imageUrl: template29, pdfType: 2 },
     { key: "template30", imageUrl: template30, pdfType: 2 },
+    { key: "template31", imageUrl: template31, pdfType: 2 },
+    { key: "template32", imageUrl: template32, pdfType: 2 }
   ];
 
   useEffect(() => {
@@ -184,6 +189,12 @@ const TemplateSelector = ({
                 </div>
               ))}
             </div>
+            <button
+              onClick={closeModal}
+              className="w-full sm:w-auto px-6 py-2.5 my-4 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 transition-colors duration-200 flex items-center justify-center mx-auto"
+            >
+              Close
+            </button>
           </div>
         </div>
       )}
