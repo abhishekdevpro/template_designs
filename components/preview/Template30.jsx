@@ -87,7 +87,14 @@ const Template30 = () => {
         />
       </div>
       <div className="mb-9">
-        {<h2 className="text-xl text-black font-bold mb-4" style={{ color: headerColor }}>Contact</h2>}
+        {
+          <h2
+            className="text-xl text-black font-bold mb-4"
+            style={{ color: headerColor }}
+          >
+            Contact
+          </h2>
+        }
         <ContactAndSocialMedia
           contactData={{
             teldata: resumeData.contactInformation,
@@ -105,7 +112,8 @@ const Template30 = () => {
       <div className="mb-8">
         <WorkExperience
           itemClassNames={{
-            title: "text-lg font-bold mb-1 border-b-2 border-gray-300 editable ",
+            title:
+              "text-lg font-bold mb-1 border-b-2 border-gray-300 editable ",
             company: "font-semibold",
             position: "",
             location: "",
