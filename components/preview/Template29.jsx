@@ -139,14 +139,14 @@ const Template29 = () => {
               headerColor={backgroundColorss}
             />
           </div>
-            <SkillsWrapper
-              skills={resumeData.skills}
-              headerColor={"black"}
-              droppableId="skills-section-1"
-              className="mt-4"
-              layout="row"
-              textColor="black"
-            />
+              <SkillsWrapper
+                skills={resumeData.skills}
+                headerColor={"black"}
+                droppableId="skills-section-1"
+                className="mt-2 flex flex-row justify-between"
+                layout="col "
+                textColor="black"
+              />
             <EducationSection1
               itemClassNames={{
                 school: "",
@@ -157,6 +157,22 @@ const Template29 = () => {
               educationData={resumeData?.education}
               headerColor={"black"}
             />
+            {/* <div>
+              <h2 style={{
+              color: `${
+                headerColor == "black" ? `${backgroundColorss}` : headerColor
+              }`,
+              // borderBottom: `1px solid ${
+              //   headerColor == "black" ? `${backgroundColorss}` : headerColor
+              // }`,
+            }}
+            contentEditable
+            suppressContentEditableWarning
+            className="text-2xl font-semibold mb-2 mt-4">
+
+                Additional Information
+              </h2>
+            </div> */}
             <div className="mb-5 mt-5">
               <Language
                 title="Languages"
