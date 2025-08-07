@@ -297,6 +297,7 @@ import { ImageWrapper, SummaryWrapper, TextWrapper } from "./Common";
 import { SkillsWrapper } from "./SkillWrapper";
 import WorkExperience from "./WorkExperience";
 import ProjectsSection from "./ProjectSection";
+import SectionDivider from "./SectionDivider";
 
 // Importing draggable components dynamically
 const DragDropContext = dynamic(
@@ -339,8 +340,8 @@ const Template34 = () => {
   return (
     <div
       ref={templateRef}
-      className="border-t-4"
-      style={{ fontFamily: `${selectedFont}`, borderColor: `${backgroundColorss}` }}
+      className=""
+      style={{ fontFamily: `${selectedFont}`, borderTop: `3px solid ${backgroundColorss}` }}
     >
 
       <div className="header text-center mb-6 mt-6 [&>div]:justify-center">
@@ -368,32 +369,36 @@ const Template34 = () => {
           />
         </div>
       </div>
-
-      <SummaryWrapper
-        summary={resumeData.summary}
-        headerColor={"black"}
-        editable={true} // Set to false if editing is not required
-        className="mt-4 text-center"
-      />
-     <section className="skills mb-6">
+    
+<SectionDivider title="PROFESSIONAL SUMMARY" backgroundColor={backgroundColorss} />
+<SummaryWrapper
+  summary={resumeData.summary}
+  headerColor={"black"}
+  editable={true}
+  className="mt-4 [&>h2]:hidden"
+/>
+    <SectionDivider title="SKILLS" backgroundColor={backgroundColorss} />
+     <section className="skills mb-6"> 
         <SkillsWrapper
           skills={resumeData.skills}
           headerColor={backgroundColorss}
           droppableId="skills-section-1"
-          className="mt-4"
+          className="mt-4 flex flex-row justify-between"
           layout="column"
           textColor="black"
+          Hidden="hidden"
         />
       </section>
 
       <section className="experience mb-6">
         {/* <h2 className="text-lg font-bold mb-2.5 uppercase border-b border-black pb-0.5 " style={{ color: headerColor }}>Professional Experience</h2> */}
 
-        <div className="col-span-2 space-y-2">
+            <SectionDivider title="EXPERIENCE" backgroundColor={backgroundColorss} />
+          <div className="col-span-2 space-y-2">
           <WorkExperience
             itemClassNames={{
               title:
-                "text-lg font-bold mb-1 border-b-2 border-gray-300 editable",
+                "text-lg font-bold mb-1 border-b-2 border-gray-300 editable hidden",
               company: "font-semibold",
               position: "content",
               location: "sub-content",
@@ -401,10 +406,18 @@ const Template34 = () => {
             resumeData={resumeData}
             headerColor={backgroundColorss}
           />
-          <ProjectsSection
-            resumeData={resumeData}
-            headerColor={backgroundColorss}
-          />
+    <SectionDivider title="EDUCATION" backgroundColor={backgroundColorss} />
+            <EducationSection
+              itemClassNames={{
+                school: "",
+                degree: "",
+                location: "",
+              }}
+              layout="row"
+              educationData={resumeData?.education}
+              headerColor={backgroundColorss}
+              className="[&>h2]:hidden"
+            />
         </div>
       </section>
 
@@ -421,32 +434,32 @@ const Template34 = () => {
               <p className="">{item.school}</p>
             </div>
           ))} */}
-            <EducationSection
-              itemClassNames={{
-                school: "",
-                degree: "",
-                location: "",
-              }}
-              layout="row"
-              educationData={resumeData?.education}
-              headerColor={backgroundColorss}
+        <SectionDivider title="PROJECTS" backgroundColor={backgroundColorss} />
+        <ProjectsSection
+                resumeData={resumeData}
+                headerColor={backgroundColorss}
+                Hidden="hidden"
             />
           </div>
         )}
       </section>
+      <SectionDivider title="CERTIFICATION" backgroundColor={backgroundColorss} />
       <section className="certification mb-6">
         <Certification
           title="Certifications"
           certifications={resumeData.certifications}
           hasBullet={false}
           headerColor={"black"}
+          className="[&>h2]:hidden"
         />
       </section>
+      <SectionDivider title="LANGUAGE" backgroundColor={backgroundColorss} />
       <section className="language mb-6">
         <Language
           title="Languages"
           languages={resumeData.languages}
           headerColor={"black"}
+          Hidden="hidden"
         />
       </section>
     </div>

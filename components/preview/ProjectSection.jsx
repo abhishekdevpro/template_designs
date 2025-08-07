@@ -15,7 +15,7 @@ const Draggable = dynamic(
   () => import("react-beautiful-dnd").then((mod) => mod.Draggable),
   { ssr: false }
 );
-const ProjectsSection = ({ resumeData, headerColor }) => {
+const ProjectsSection = ({ resumeData, headerColor, Hidden }) => {
   if (!resumeData?.projects || resumeData.projects.length === 0) {
     return null;
   }
@@ -27,7 +27,7 @@ const ProjectsSection = ({ resumeData, headerColor }) => {
       {(provided) => (
         <div {...provided.droppableProps} ref={provided.innerRef}>
           <h2
-            className="text-xl font-semibold mb-1 border-b-2 border-gray-300 editable"
+            className={`text-xl font-semibold mb-1 border-b-2 border-gray-300 editable ${Hidden}`}
             contentEditable
             suppressContentEditableWarning
             style={{

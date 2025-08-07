@@ -51,7 +51,7 @@
 import React, { useContext } from "react";
 import { ResumeContext } from "../context/ResumeContext";
 
-const Language = ({ title, languages, headerColor }) => {
+const Language = ({ title, languages, headerColor, Hidden }) => {
   const { backgroundColorss } = useContext(ResumeContext);
 
   return (
@@ -70,7 +70,7 @@ const Language = ({ title, languages, headerColor }) => {
             }}
             contentEditable
             suppressContentEditableWarning
-            className="text-xl font-semibold mb-1"
+            className={`text-xl font-semibold mb-1 ${Hidden}`}
           >
             {title}
           </h2>
