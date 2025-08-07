@@ -29,9 +29,9 @@ import {
 } from "react-icons/fa";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 import dynamic from "next/dynamic";
-import ContactAndSocialMedia from "./ContactAndSocial";
+import ContactAndSocialMedia2 from "./ContactAndSocial2";
 import { SummaryWrapper, TextWrapper } from "./Common";
-import WorkExperience from "./WorkExperience3";
+import WorkExperience from "./WorkExperience";
 import ProjectsSection from "./ProjectSection";
 import { SkillsWrapper } from "./SkillWrapper";
 //import EducationSection from "./Education";
@@ -143,11 +143,10 @@ const Template31 = () => {
           />
         </div>
         <aside
-          className="w-4/12 p-4"
-         //style={{ backgroundColor: backgroundColorss }}
+          className="w-4/12 p-4 "
+        //  style={{ backgroundColor: backgroundColorss }}
         >
-          
-            <ContactAndSocialMedia
+            <ContactAndSocialMedia2
               title="Contacts"
               contactData={{
                 teldata: resumeData.contactInformation,
@@ -161,7 +160,7 @@ const Template31 = () => {
               socialMediaClass=""
               // textColor="text-white"
             />
-            <div>
+            <div className="mt-3">
               <SummaryWrapper
                 summary={resumeData.summary}
                 // headerColor={"white"}

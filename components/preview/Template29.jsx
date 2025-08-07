@@ -76,13 +76,13 @@ const Template29 = () => {
   return (
     <div className="   " style={{ fontFamily: `${selectedFont}` }}>
       <div class="flex gap-1 items-start ">
-          {resumeData?.profilePicture && (
+          {/* {resumeData?.profilePicture && (
             <ImageWrapper
               src={resumeData.profilePicture}
               alt="Profile Picture"
               className="w-32 h-32 rounded-full"
             />
-          )}
+          )} */}
         <div className="mb-3 pt-2.5	w-2/3 text-left">
           <TextWrapper
             name={resumeData?.name.toUpperCase()}
