@@ -10,6 +10,7 @@ const SkillsWrapper = ({
   droppableId = "skills",
   className = "",
   textColor = "white",
+  Hidden="",
 
   layout,
 }) => {
@@ -25,7 +26,7 @@ const SkillsWrapper = ({
             headerColor == "black" ? `${backgroundColorss}` : headerColor
           }`,
         }}
-        className="text-xl font-semibold mb-1 "
+        className={`text-xl font-semibold mb-1 ${Hidden}`}
         contentEditable
         suppressContentEditableWarning
       >

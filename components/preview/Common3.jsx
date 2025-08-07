@@ -118,16 +118,19 @@ const SummaryWrapper = ({
       <div className={`mb-1 ${className}`}>
         <h2
           style={{
-            color: `${
+            // color: `${
+            //   headerColor == "black" ? `${backgroundColorss}` : headerColor
+            // }`,
+            // borderBottom: `1px solid ${
+            //   headerColor == "black" ? `${backgroundColorss}` : headerColor
+            // }`,
+            backgroundColor: `${
               headerColor == "black" ? `${backgroundColorss}` : headerColor
-            }`,
-            borderBottom: `1px solid ${
-              headerColor == "black" ? `${backgroundColorss}` : headerColor
-            }`,
+            }`
           }}
           contentEditable
           suppressContentEditableWarning
-          className="text-xl font-semibold mb-1"
+          className="text-xl font-semibold mb-1 text-center"
         >
           Summary
         </h2>

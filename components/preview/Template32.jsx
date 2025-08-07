@@ -34,7 +34,7 @@ import { ImageWrapper, SummaryWrapper, TextWrapper } from "./Common1";
 import WorkExperience from "./WorkExperience";
 import ProjectsSection from "./ProjectSection";
 import { SkillsWrapper } from "./SkillWrapper";
-import EducationSection from "./Education";
+import EducationSection1 from "./Education1";
 // Importing draggable components dynamically
 const DragDropContext = dynamic(
   () => import("react-beautiful-dnd").then((mod) => mod.DragDropContext),
@@ -179,7 +179,7 @@ const Template32 = () => {
           </div>
 
           <div className="mb-5">
-            <EducationSection
+            <EducationSection1
               itemClassNames={{
                 school: "",
                 degree: "",
