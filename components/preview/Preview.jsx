@@ -391,6 +391,8 @@ import Template29 from "./Template29";
 import Template30 from "./Template30";
 import Template31 from "./Template31";
 import Template32 from "./Template32";
+import Template33 from "./Template33";
+import Template34 from "./Template34";
 
 // Importing draggable components dynamically
 const DragDropContext = dynamic(
@@ -502,7 +504,9 @@ const Preview = forwardRef(({ selectedTemplate }, ref) => {
     template29: <Template29 />,
     template30: <Template30 />,
     template31: <Template31 />,
-    template32: <Template32 />
+    template32: <Template32 />,
+    template33: <Template33 />,
+    template34: <Template34 />
   };
 
   const onDragEnd = (result) => {

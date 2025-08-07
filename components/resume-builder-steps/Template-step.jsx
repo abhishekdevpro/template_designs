@@ -37,6 +37,10 @@ import template27 from "../preview/template/template27.png";
 import template28 from "../preview/template/template28.png";
 import template29 from "../preview/template/template29.png";
 import template30 from "../preview/template/template30.png";
+import template31 from "../preview/template/template31.png";
+import template32 from "../preview/template/template32.png";
+import template33 from "../preview/template/template33.png";
+import template34 from "../preview/template/template34.png";
 
 import { SaveLoader } from "../ResumeLoader/SaveLoader";
 import { ResumeContext } from "../context/ResumeContext";
@@ -435,6 +439,30 @@ const TemplateStep = ({ onNext, onBack, onChange, value }) => {
       name: "Contemporary",
       // hasPhoto: false,
     },
+    {
+      key: "template31",
+      imageUrl: template31,
+      name: "Contemporary",
+      // hasPhoto: false,
+    },
+    {
+      key: "template32",
+      imageUrl: template32,
+      name: "Contemporary",
+      // hasPhoto: false,
+    },
+    {
+      key: "template33",
+      imageUrl: template33,
+      name: "Contemporary",
+      // hasPhoto: false,
+    },
+    {
+      key: "template34",
+      imageUrl: template34,
+      name: "Contemporary",
+      // hasPhoto: false,
+    }
   ];
 
   // Filter templates based on photo preference
