@@ -24,7 +24,7 @@ import ProjectsSection from "./ProjectSection";
 import Certification from "./Certification";
 import Language from "./Language";
 
-const Template17 = () => {
+const Template53Jatin = () => {
   const {
     resumeData,
     setResumeData,
@@ -49,7 +49,7 @@ const Template17 = () => {
       className=""
       style={{ fontFamily: `${selectedFont}` }}
     >
-      <div className="p-4" style={{ backgroundColor: backgroundColorss }}>
+      <div className="p-4 " style={{ backgroundColor: backgroundColorss }}>
         <div
           style={{ borderBottom: `2px solid ${backgroundColorss}` }}
           className={`mb-2 ${
@@ -58,13 +58,7 @@ const Template17 = () => {
               : "flex justify-center items-center "
           } `}
         >
-          {resumeData?.profilePicture && (
-            <ImageWrapper
-              src={resumeData.profilePicture}
-              alt="Profile Picture"
-              className="w-32 h-32 rounded-full"
-            />
-          )}
+          
           <TextWrapper
             name={resumeData.name}
             position={resumeData.position}
@@ -90,19 +84,35 @@ const Template17 = () => {
           />
         </div>
       </div>
-      <div className="mx-auto  px-4">
-        <SummaryWrapper
-          summary={resumeData.summary}
-          headerColor={"black"}
-          editable={true} // Set to false if editing is not required
-          className="mt-4"
-        />
-        <section className="skills mb-6">
+      <div className="mx-auto  px-4 mt-4">
+
+         <div className="flex justify-between">
+             <div className="mt-[14px] pl-[30px]">
+                {resumeData?.profilePicture && (
+                    <ImageWrapper
+                    src={resumeData.profilePicture}
+                    alt="Profile Picture"
+                    className="w-32 h-32 rounded-full"
+                    />
+                )}
+             </div>
+
+             <div className="ml-[60px]">
+            <SummaryWrapper
+              summary={resumeData.summary}
+              headerColor={"black"}
+              editable={true} // Set to false if editing is not required
+              className="mt-4"
+              />
+             </div>
+
+            </div>
+        <section className="skills mb-6 ">
           <SkillsWrapper
             skills={resumeData.skills}
             headerColor={"black"}
             droppableId="skills-section-1"
-            className="mt-2 flex flex-row justify-between"
+            className="mt-2 flex flex-row justify-between border-b-[5px]"
             layout="col "
             textColor="black"
           />
@@ -166,4 +176,4 @@ const Template17 = () => {
   );
 };
 
-export default Template17;
+export default Template53Jatin;

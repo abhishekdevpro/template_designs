@@ -96,6 +96,7 @@ const Certification = ({
   headerColor,
   className = "",
   itemClassNames = {},
+  bgHeader = ""
 }) => {
   const { backgroundColorss } = useContext(ResumeContext);
 
@@ -119,6 +120,7 @@ const Certification = ({
               borderBottom: `1px solid ${
                 headerColor === "black" ? `${backgroundColorss}` : headerColor
               }`,
+              backgroundColor : `${bgHeader}`
             }}
             className={`text-xl font-semibold mb-2 ${
               itemClassNames.title || ""

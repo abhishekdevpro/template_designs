@@ -6,6 +6,7 @@ import CoverLetter2 from "./CoverLetter2";
 import CoverLetter4 from "./CoverLetter4";
 import { CoverLetterContext } from "../../context/CoverLetterContext";
 import CoverLetter5 from "./CoverLetter5";
+import CoverLetter6 from "./CoverLetter6";
 
 // function CoverLetterPreview({ selectedTemplate }) {
 const CoverLetterPreview = forwardRef(({ selectedTemplate }, ref) => {
@@ -17,6 +18,7 @@ const CoverLetterPreview = forwardRef(({ selectedTemplate }, ref) => {
     template3: <CoverLetter3 />,
     template4: <CoverLetter4 />,
     template5: <CoverLetter5 />,
+    template6: <CoverLetter6 />,
   };
   console.log(selectedTemplate, "template");
   return (

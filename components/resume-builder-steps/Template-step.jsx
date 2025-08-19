@@ -35,8 +35,8 @@ import template25 from "../preview/template/template25.png";
 import template26 from "../preview/template/template26.png";
 import template27 from "../preview/template/template27.png";
 import template28 from "../preview/template/template28.png";
-import template29 from "../preview/template/template29.png";
-import template30 from "../preview/template/template30.png";
+import template29Jatin from "../preview/template/template29Jatin.png";
+import template30Jatin from "../preview/template/template30Jatin.png";
 
 import { SaveLoader } from "../ResumeLoader/SaveLoader";
 import { ResumeContext } from "../context/ResumeContext";
@@ -424,14 +424,14 @@ const TemplateStep = ({ onNext, onBack, onChange, value }) => {
       // hasPhoto: false,
     },
     {
-      key: "template29",
-      imageUrl: template29,
+      key: "template29Jatin",
+      imageUrl: template29Jatin,
       name: "Contemporary",
       // hasPhoto: false,
     },
     {
-      key: "template30",
-      imageUrl: template30,
+      key: "template30Jatin",
+      imageUrl: template30Jatin,
       name: "Contemporary",
       // hasPhoto: false,
     },

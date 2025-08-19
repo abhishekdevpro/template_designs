@@ -49,7 +49,7 @@ const Draggable = dynamic(
   () => import("react-beautiful-dnd").then((mod) => mod.Draggable),
   { ssr: false }
 );
-const Template30 = () => {
+const Template30Jatin = () => {
   const {
     resumeData,
     setResumeData,
@@ -159,8 +159,9 @@ const Template30 = () => {
           headerColor={"black"}
         />
       </div> */}
+      {/* comment*/}
     </div>
   );
 };
 
-export default Template30;
+export default Template30Jatin;
