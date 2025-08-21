@@ -387,13 +387,25 @@ import Template25 from "./Template25";
 import Template26 from "./Template26";
 import Template27 from "./Template27";
 import Template28 from "./Template28";
-import Template29 from "./Template29";
-import Template30 from "./Template30";
 import Template31 from "./Template31";
 import Template32 from "./Template32";
 import Template33 from "./Template33";
 import Template34 from "./Template34";
-
+import Template29Jatin from "./Template29Jatin";
+import Template30Jatin from "./Template30Jatin";
+import Template41Jatin from "./Template41Jatin";
+import Template42Jatin from "./Template42Jatin";
+import Template43Jatin from "./Template43Jatin";
+import Template44Jatin from "./Template44Jatin";
+import Template45Jatin from "./Template45Jatin";
+import Template46Jatin from "./Template46Jatin";
+import Template47Jatin from "./Template47Jatin";
+import Template48Jatin from "./Template48Jatin";
+import Template49Jatin from "./Template49Jatin";
+import Template50Jatin from "./Template50Jatin";
+import Template51Jatin from "./Template51Jatin";
+import Template52Jatin from "./Template52Jatin";
+import Template53Jatin from "./Template53Jatin";
 // Importing draggable components dynamically
 const DragDropContext = dynamic(
   () => import("react-beautiful-dnd").then((mod) => mod.DragDropContext),
@@ -501,12 +513,25 @@ const Preview = forwardRef(({ selectedTemplate }, ref) => {
     template26: <Template26 />,
     template27: <Template27 />,
     template28: <Template28 />,
-    template29: <Template29 />,
-    template30: <Template30 />,
     template31: <Template31 />,
     template32: <Template32 />,
     template33: <Template33 />,
-    template34: <Template34 />
+    template34: <Template34 />,
+    template29Jatin: <Template29Jatin />,
+    template30Jatin: <Template30Jatin />,
+    template41Jatin: <Template41Jatin />,
+    template42Jatin: <Template42Jatin />,
+    template43Jatin: <Template43Jatin />,
+    template44Jatin: <Template44Jatin />,
+    template45Jatin: <Template45Jatin />,
+    template46Jatin: <Template46Jatin />,
+    template47Jatin: <Template47Jatin />,
+    template48Jatin: <Template48Jatin />,
+    template49Jatin: <Template49Jatin />,
+    template50Jatin: <Template50Jatin />,
+    template51Jatin: <Template51Jatin />,
+    template52Jatin: <Template52Jatin />,
+    template53Jatin: <Template53Jatin />
   };
 
   const onDragEnd = (result) => {

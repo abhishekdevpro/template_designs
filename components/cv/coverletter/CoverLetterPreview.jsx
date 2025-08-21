@@ -6,6 +6,12 @@ import CoverLetter2 from "./CoverLetter2";
 import CoverLetter4 from "./CoverLetter4";
 import { CoverLetterContext } from "../../context/CoverLetterContext";
 import CoverLetter5 from "./CoverLetter5";
+import CoverLetter6 from "./CoverLetter6";
+import CoverLetter7 from "./CoverLetter7";
+import CoverLetter8 from "./CoverLetter8";
+import CoverLetter9 from "./CoverLetter9";
+import CoverLetter10 from "./CoverLetter10";
+import CoverLetter11 from "./CoverLetter11";
 
 // function CoverLetterPreview({ selectedTemplate }) {
 const CoverLetterPreview = forwardRef(({ selectedTemplate }, ref) => {
@@ -17,6 +23,12 @@ const CoverLetterPreview = forwardRef(({ selectedTemplate }, ref) => {
     template3: <CoverLetter3 />,
     template4: <CoverLetter4 />,
     template5: <CoverLetter5 />,
+    template6: <CoverLetter6 />,
+    template7: <CoverLetter7 />,
+    template8: <CoverLetter8 />,
+    template9: <CoverLetter9 />,
+    template10: <CoverLetter10 />,
+    template11: <CoverLetter11 />,
   };
   console.log(selectedTemplate, "template");
   return (

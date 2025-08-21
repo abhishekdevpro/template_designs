@@ -6,6 +6,12 @@ import cvletter2 from "./cvimgs/cvletter2.png";
 import cvletter3 from "./cvimgs/cvletter3.png";
 import cvletter4 from "./cvimgs/cvletter4.png";
 import cvletter5 from "./cvimgs/cvletter5.png";
+import cvletter6 from "./cvimgs/cvletter6.png";
+import cvletter7 from "./cvimgs/cvletter7.png";
+import cvletter8 from "./cvimgs/cvletter8.png";
+import cvletter9 from "./cvimgs/cvletter9.png";
+import cvletter10 from "./cvimgs/cvletter10.png";
+import cvletter11 from "./cvimgs/cvletter11.png";
 const TemplateSelector = ({
   selectedTemplate,
   setSelectedTemplate,
@@ -21,6 +27,12 @@ const TemplateSelector = ({
     { key: "template3", imageUrl: cvletter3, pdfType: 3 },
     { key: "template4", imageUrl: cvletter4, pdfType: 3 },
     { key: "template5", imageUrl: cvletter5, pdfType: 4 },
+    { key: "template6", imageUrl: cvletter6, pdfType: 4 },
+    { key: "template7", imageUrl: cvletter7, pdfType: 4 },
+    { key: "template8", imageUrl: cvletter8, pdfType: 4 },
+    { key: "template9", imageUrl: cvletter9, pdfType: 4 },
+    { key: "template10", imageUrl: cvletter10, pdfType: 4 },
+    { key: "template11", imageUrl: cvletter11, pdfType: 4 },
   ];
 
   useEffect(() => {

@@ -47,7 +47,7 @@ const Draggable = dynamic(
   { ssr: false }
 );
 
-const Template29 = () => {
+const Template42Jatin = () => {
   const templateRef = useRef(null);
 
   const extractHtml = () => {
@@ -75,14 +75,8 @@ const Template29 = () => {
   ];
   return (
     <div className="   " style={{ fontFamily: `${selectedFont}` }}>
-      <div class="flex gap-1 items-start ">
-          {/* {resumeData?.profilePicture && (
-            <ImageWrapper
-              src={resumeData.profilePicture}
-              alt="Profile Picture"
-              className="w-32 h-32 rounded-full"
-            />
-          )} */}
+      {/* <div class="flex text-center justify-center items-center">
+          
         <div className="mb-3 pt-2.5	w-2/3 text-left">
           <TextWrapper
             name={resumeData?.name.toUpperCase()}
@@ -96,9 +90,34 @@ const Template29 = () => {
             orientation="column"
           />
         </div>
+      </div> */}
+      <div className="header text-center mb-6">
+
+        <div className="mb-4">
+          <TextWrapper
+            name={resumeData.name}
+            position={resumeData.position}
+            headerColor={backgroundColorss}
+            orientation="column" // Use "column" for stacked layout
+          />
+        </div>
+
+        <ContactAndSocialMedia
+          contactData={{
+            teldata: resumeData.contactInformation,
+            emaildata: resumeData.email,
+            addressdata: resumeData.address,
+          }}
+          socialMediaData={resumeData.socialMedia}
+          icons={icons}
+          layout="row" // or "row"
+          contactClass=""
+          socialMediaClass=""
+          className="justify-center gap-4"
+        />
       </div>
 
-      <ContactAndSocialMedia
+      {/* <ContactAndSocialMedia
         contactData={{
           addressdata: resumeData.address,
           emaildata: resumeData.email,
@@ -110,16 +129,17 @@ const Template29 = () => {
         contactClass=""
         socialMediaClass=""
         className="items-start justify-start"
-      />
+      /> */}
       <div class="border-solid border-2 border-black mb-5 mt-4 "></div>
 
-      <div className="mb-5">
+      <div className="mb-5" >
         <SummaryWrapper
           summary={resumeData.summary}
           headerColor={"black"}
           editable={true}
-          className=""
+          className="text-xl"
         />
+        {/* <p></p> */}
       </div>
 
       <div className="mb-5">
@@ -139,14 +159,14 @@ const Template29 = () => {
               headerColor={backgroundColorss}
             />
           </div>
-              <SkillsWrapper
-                skills={resumeData.skills}
-                headerColor={"black"}
-                droppableId="skills-section-1"
-                className="mt-2 flex flex-row justify-between"
-                layout="col "
-                textColor="black"
-              />
+            <SkillsWrapper
+              skills={resumeData.skills}
+              headerColor={"black"}
+              droppableId="skills-section-1"
+              className="mt-4"
+              layout="row"
+              textColor="black"
+            />
             <EducationSection1
               itemClassNames={{
                 school: "",
@@ -157,22 +177,6 @@ const Template29 = () => {
               educationData={resumeData?.education}
               headerColor={"black"}
             />
-            {/* <div>
-              <h2 style={{
-              color: `${
-                headerColor == "black" ? `${backgroundColorss}` : headerColor
-              }`,
-              // borderBottom: `1px solid ${
-              //   headerColor == "black" ? `${backgroundColorss}` : headerColor
-              // }`,
-            }}
-            contentEditable
-            suppressContentEditableWarning
-            className="text-2xl font-semibold mb-2 mt-4">
-
-                Additional Information
-              </h2>
-            </div> */}
             <div className="mb-5 mt-5">
               <Language
                 title="Languages"
@@ -210,4 +214,4 @@ const A4PageWrapper = ({ children }) => {
   );
 };
 
-export default Template29;
+export default Template42Jatin;

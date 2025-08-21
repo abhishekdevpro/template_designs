@@ -103,12 +103,13 @@ const EducationSection = ({
   headerColor,
   className = "",
   layout = "column", // "column" or "row"
+  bgHeader = ""
 }) => {
   const { backgroundColorss } = useContext(ResumeContext);
   if (!educationData || educationData.length === 0) return null;
 
   return (
-    <div className={`mb-1 ${className}`}>
+    <div className={`  ${className}`}>
       <h2
         style={{
           color: `${
@@ -117,8 +118,9 @@ const EducationSection = ({
           borderBottom: `1px solid ${
             headerColor == "black" ? `${backgroundColorss}` : headerColor
           }`,
+          backgroundColor:`${bgHeader}`
         }}
-        className="text-xl font-semibold mb-1"
+        className="text-xl font-semibold mb-1 flex items-center"
         contentEditable
         suppressContentEditableWarning
       >

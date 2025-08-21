@@ -428,14 +428,14 @@ const TemplateStep = ({ onNext, onBack, onChange, value }) => {
       // hasPhoto: false,
     },
     {
-      key: "template29",
-      imageUrl: template29,
+      key: "template29Jatin",
+      imageUrl: template29Jatin,
       name: "Contemporary",
       // hasPhoto: false,
     },
     {
-      key: "template30",
-      imageUrl: template30,
+      key: "template30Jatin",
+      imageUrl: template30Jatin,
       name: "Contemporary",
       // hasPhoto: false,
     },

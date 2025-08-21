@@ -29,13 +29,26 @@ import template25 from "./template/template25.png";
 import template26 from "./template/template26.png";
 import template27 from "./template/template27.png";
 import template28 from "./template/template28.png";
-import template29 from "./template/template29.png";
-import template30 from "./template/template30.png";
 import template31 from "./template/template31.png";
 import template32 from "./template/template32.png";
 import template33 from "./template/template33.png";
 import template34 from "./template/template34.png";
 
+import template29Jatin from "./template/template29Jatin.png";
+import template30Jatin from "./template/template30Jatin.png";
+import template41Jatin from "./template/template41Jatin.png";
+import template42Jatin from "./template/template42Jatin.png";
+import template43Jatin from "./template/template43Jatin.png";
+import template44Jatin from "./template/template44Jatin.png";
+import template45Jatin from "./template/template45Jatin.png";
+import template46Jatin from "./template/template46Jatin.png";
+import template47Jatin from "./template/template47Jatin.png";
+import template48Jatin from "./template/template48Jatin.png";
+import template49Jatin from "./template/template49Jatin.png";
+import template50Jatin from "./template/template50Jatin.png";
+import template51Jatin from "./template/template51Jatin.png";
+import template52Jatin from "./template/template52Jatin.png";
+import template53Jatin from "./template/template53Jatin.png";
 const TemplateSelector = ({
   selectedTemplate,
   setSelectedTemplate,
@@ -75,13 +88,26 @@ const TemplateSelector = ({
     { key: "template25", imageUrl: template25, pdfType: 1 },
     { key: "template26", imageUrl: template26, pdfType: 3 },
     { key: "template27", imageUrl: template27, pdfType: 3 },
-    { key: "template28", imageUrl: template28, pdfType: 2 },
-    { key: "template29", imageUrl: template29, pdfType: 2 },
     { key: "template30", imageUrl: template30, pdfType: 2 },
     { key: "template31", imageUrl: template31, pdfType: 2 },
     { key: "template32", imageUrl: template32, pdfType: 2 },
     { key: "template33", imageUrl: template33, pdfType: 2 },
-    { key: "template34", imageUrl: template34, pdfType: 2 }
+    { key: "template34", imageUrl: template34, pdfType: 2 },
+    { key: "template29Jatin", imageUrl: template29Jatin, pdfType: 3 },
+    { key: "template30Jatin", imageUrl: template30Jatin, pdfType: 3 },
+    { key: "template41Jatin", imageUrl: template41Jatin, pdfType: 3 },
+    { key: "template42Jatin", imageUrl: template42Jatin, pdfType: 3 },
+    { key: "template43Jatin", imageUrl: template43Jatin, pdfType: 3 },
+    { key: "template44Jatin", imageUrl: template44Jatin, pdfType: 4 },
+    { key: "template45Jatin", imageUrl: template45Jatin, pdfType: 4 },
+    { key: "template46Jatin", imageUrl: template46Jatin, pdfType: 3 },
+    { key: "template47Jatin", imageUrl: template47Jatin, pdfType: 3 },
+    { key: "template48Jatin", imageUrl: template48Jatin, pdfType: 3 },
+    { key: "template49Jatin", imageUrl: template49Jatin, pdfType: 3 },
+    { key: "template50Jatin", imageUrl: template50Jatin, pdfType: 4 },
+    { key: "template51Jatin", imageUrl: template51Jatin, pdfType: 3 },
+    { key: "template52Jatin", imageUrl: template52Jatin, pdfType: 3 },
+    { key: "template53Jatin", imageUrl: template53Jatin, pdfType: 3 },
   ];
 
   useEffect(() => {

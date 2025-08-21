@@ -4,34 +4,40 @@ import { Droppable, Draggable } from "react-beautiful-dnd";
 import Skills from "./Skills";
 import { ResumeContext } from "../context/ResumeContext";
 
-const SkillsWrapper = ({
+const SkillsWrapper2 = ({
   skills,
-  headerColor = "black",
+  headerColor = "",
   droppableId = "skills",
   className = "",
   textColor = "white",
   bgHeader = "",
   layout,
+  headerBackground = ""
 }) => {
   const { backgroundColorss } = useContext(ResumeContext);
   return (
     <div className={`skills-section `}>
-      <h2
-        style={{
-          color: `${
-            headerColor == "black" ? `${backgroundColorss}` : headerColor
-          }`,
-          borderBottom: `1px solid ${
-            headerColor == "black" ? `${backgroundColorss}` : headerColor
-          }`,
-          backgroundColor: `${bgHeader}`
-        }}
-        className={`text-xl font-semibold mb-1 ${Hidden}`}
-        contentEditable
-        suppressContentEditableWarning
-      >
-        Skills
-      </h2>
+      <div className="" style={{ backgroundColor: headerColor }}>
+          <h2
+            className="font-semibold px-2 py-1"
+            contentEditable
+            suppressContentEditableWarning
+            // style={{
+            // //   backgroundColor: bgHeader || (headerColor === "black" ? backgroundColorss : headerColor),
+            // backgroundColor : `${headerBackground}`,
+            //   color: "#fff", // Always white for visibility
+            //   borderBottom: "none"
+            // }}
+             style={{
+              color: headerColor,
+              borderBottom: `1px solid ${headerColor}`,
+              backgroundColor : `${headerBackground}`,
+            }}
+          >
+           Skills
+          </h2>
+          </div>
+
       <Droppable droppableId={droppableId} type="SKILLS">
         {(provided) => (
           <div
@@ -79,7 +85,7 @@ const SkillsWrapper = ({
   );
 };
 
-SkillsWrapper.propTypes = {
+SkillsWrapper2.propTypes = {
   skills: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
@@ -91,11 +97,11 @@ SkillsWrapper.propTypes = {
   className: PropTypes.string,
 };
 
-SkillsWrapper.defaultProps = {
+SkillsWrapper2.defaultProps = {
   skills: [],
   headerColor: "black",
   droppableId: "skills",
   className: "",
 };
 
-export { SkillsWrapper };
+export { SkillsWrapper2 };

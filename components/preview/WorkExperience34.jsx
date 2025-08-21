@@ -2,7 +2,7 @@ import React from "react";
 import { Droppable, Draggable } from "react-beautiful-dnd";
 import DateRangeExperience from "../utility/DateRangeExperience";
 
-const WorkExperience = ({
+const WorkExperience34 = ({
   resumeData,
   headerColor,
   className = "",
@@ -27,6 +27,7 @@ const WorkExperience = ({
           className={className}
           style={style}
         >
+          <div className="" style={{ backgroundColor: headerColor }}>
           <h2
             className={`${itemClassNames.title || "font-semibold"}`}
             contentEditable
@@ -39,6 +40,7 @@ const WorkExperience = ({
           >
             Work Experience
           </h2>
+          </div>
 
           {resumeData.workExperience.map((item, index) => (
             <Draggable
@@ -157,4 +159,4 @@ const WorkExperience = ({
   );
 };
 
-export default WorkExperience;
+export default WorkExperience34;
