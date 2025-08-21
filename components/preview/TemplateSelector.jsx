@@ -42,9 +42,9 @@ import template47Jatin from "./template/template47Jatin.png";
 import template48Jatin from "./template/template48Jatin.png";
 import template49Jatin from "./template/template49Jatin.png";
 import template50Jatin from "./template/template50Jatin.png";
-import template51Jatin from "./template/template23.png";
-import template52Jatin from "./template/template22.png";
-import template53Jatin from "./template/template22.png";
+import template51Jatin from "./template/template51Jatin.png";
+import template52Jatin from "./template/template52Jatin.png";
+import template53Jatin from "./template/template53Jatin.png";
 const TemplateSelector = ({
   selectedTemplate,
   setSelectedTemplate,
@@ -98,9 +98,9 @@ const TemplateSelector = ({
     { key: "template48Jatin", imageUrl: template48Jatin, pdfType: 3 },
     { key: "template49Jatin", imageUrl: template49Jatin, pdfType: 3 },
     { key: "template50Jatin", imageUrl: template50Jatin, pdfType: 4 },
-    { key: "template51Jatin", imageUrl: template23, pdfType: 3 },
-    { key: "template52Jatin", imageUrl: template22, pdfType: 3 },
-    { key: "template53Jatin", imageUrl: template22, pdfType: 3 },
+    { key: "template51Jatin", imageUrl: template51Jatin, pdfType: 3 },
+    { key: "template52Jatin", imageUrl: template52Jatin, pdfType: 3 },
+    { key: "template53Jatin", imageUrl: template53Jatin, pdfType: 3 },
   ];
 
   useEffect(() => {

@@ -8,13 +8,12 @@ import IntroductionBodyWrapper from "./IntroductionBodyWrapper";
 import ImageWrapper from "./ImageWrapper";
 import SocialInfo from "./SocialInfo";
 
-const CoverLetter6 = () => {
+const CoverLetter10 = () => {
   const { coverLetterData, backgroundColorss, selectedFont } =
     useContext(CoverLetterContext);
 
   return (
-    <div className="border-t-[30px] border-b-[30px]" style={{ fontFamily: `${selectedFont}`, borderTopColor:`${backgroundColorss}`, borderBottomColor:`${backgroundColorss}` }}>
-        {/* <div className="`2px solid ${backgroundColor}`"></div> */}
+    <div className="" style={{ fontFamily: `${selectedFont}` }}>
       <div
         className=" mx-auto p-4 "
         // style={{ backgroundColor: backgroundColorss || "white" }}
@@ -24,48 +23,33 @@ const CoverLetter6 = () => {
           className="p-4 "
           style={{
             borderTop: `2px solid ${backgroundColorss}`,
-            borderBottom: `2px solid ${backgroundColorss}`,
+            borderBottom: `5px solid ${backgroundColorss}`,
           }}
         >
-
           {/* Personal Information Section */}
           <div
-            className={`${
+            className={`flex justify-between ${
               coverLetterData?.photo ? "flex justify-start gap-8" : ""
             }`}
           >
 
-            
-            <div>
-              {coverLetterData?.photo && (
-                <ImageWrapper
-                  src={coverLetterData.photo}
-                  alt="Profile Picture"
-                  className="w-32 h-32 rounded-full"
-                />
-              )}
-            </div>
-
-            
-
             {/* Personal Information Section */}
-            <div className="">
+            <div>
               <PersonalInfoWrapper
                 personalDetails={coverLetterData?.personalDetails || {}}
                 //  headerColor={backgroundColorss ? "white" : "black"}
-                className="ml-[32px]"
               />
             </div>
-
             <div>
-        <SocialInfo
-          personalDetails={coverLetterData?.personalDetails || {}}
-          // headerColor={backgroundColorss ? "white" : "black"}\
-          className="px-8 mt-2"
-        />
-      </div>
+              <SocialInfo
+                personalDetails={coverLetterData?.personalDetails || {}}
+                // headerColor={backgroundColorss ? "white" : "black"}\
+                className="px-8 mt-2"
+              />
+            </div>
           </div>
         </div>
+        
       </div>
       {/* Letter Details Section */}
       <LetterDetailsWrapper
@@ -90,4 +74,4 @@ const CoverLetter6 = () => {
   );
 };
 
-export default CoverLetter6;
+export default CoverLetter10;
